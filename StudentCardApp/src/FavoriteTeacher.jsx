@@ -1,17 +1,16 @@
 import { useState } from 'react'
+import StudentCard from './StudentCard'
 
-function FavTeach() {
+function FavoriteTeacher({teacher, subject, status}) {
   const [count, setCount] = useState(0)
 
   return (
-   <div className='favorite-teacher'>
-    <h2>Tr. Vinh</h2>
-    <p>Subject: Math</p>
-    <p>Status: Legendary</p>
-   </div>
+  <div className='favorite-teacher'>
+    <p>Favorite Teacher: {teacher} {subject} {status}</p>
+  </div>
   )
 }
 
-export default FavTeach
+export default FavoriteTeacher
 
 
